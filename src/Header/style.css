@@ -5,9 +5,19 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-left: 20px;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
+@media only screen and (max-width: 600px){
+    .header{
+        display: inline-block;
+    }
+}
+
+.logo_div{
+    
+    width: 800px;
+}
 .logo {
         width: 200px;
         height: auto;

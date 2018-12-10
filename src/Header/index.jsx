@@ -9,9 +9,9 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <Fragment>
+                <div className="logo_div">
                     <img src={logo} alt="" className="logo"/>
-                </Fragment>
+                </div>
                 <div className="header_right">
                     <Typography variant="h5" >
                         <span className="first_phone">+7 (495) 997-99-50</span> <span className="second_phone">+7 (499) 167-09-42</span>
