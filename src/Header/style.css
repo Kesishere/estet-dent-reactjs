@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.logo {
+    height: auto;
+}
+
+.header_right{
+    padding-top: 10px;
+}
+
+.first_phone{
+    font-weight: bold;
+}
+
+.second_phone{
+    color: #a6a6a6;
+}

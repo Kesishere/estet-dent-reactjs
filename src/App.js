@@ -1,25 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './Header';
+import NavBar from './NavBar';
+import baner from "./img/main2.jpg"
+import { BrowserRouter, Route, Link } from "react-router-dom";
+
+import Main from './Main';
+import Spec from "./Specs/1"
+import 'typeface-roboto';
+
+import "./App.css"
+import Docs from './Docs';
+import contacts from './Docs/contacs'
+import politics from './Docs/politic'
+import terapy from './Services/terapy'
+import Endodont from './Services/endodont';
+import Surgery from './Services/surgery';
+import Orthodontics from "./Services/orthodontics"
+import Hygiene from "./Services/hygiene"
+import Orthopedics from "./Services/orthopedics"
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Header />
+        <NavBar />
+        <img src={baner} />
+        <div className="main__content">
+          <Route path="/" exact component={Main} />
+          <Route path="/specs" component={Spec} />
+          <Route path="/docs" component={Docs} />
+          <Route path="/req" component={contacts} />
+          <Route path="/politics" component={politics} />
+          <Route path="/terapy" component={terapy} />
+          <Route path="/endodont" component={Endodont}/>
+          <Route path="/surgery" component={Surgery}/>
+          <Route path="/orthodontics" component={Orthodontics}/>
+          <Route path="/hygiene" component={Hygiene} />
+          <Route path="/orthopedics" component={Orthopedics}/>
+          
+
+        </div>
+        <div className="footer"></div>
       </div>
     );
   }
