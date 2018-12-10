@@ -1,13 +1,24 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 import "./style.css"
 
-export default class MainPage extends Component {
+const styles = theme => ({
+    root: {
+      flexGrow: 1,
+    },
+    control: {
+      padding: theme.spacing.unit * 2,
+    },
+  });
+
+class MainPage extends Component {
     render() {
+        const { classes } = this.props;
         return (
-            <Grid className="container" spacing={16}>
-                <Grid item xs={6}>
+            <Grid  container className={classes.root} spacing={16}>
+                <Grid item xs={12}>
                     <Typography variant="h2">О клинике</Typography>
                     <br/>
                     <Typography variant="h5">
@@ -31,10 +42,10 @@ export default class MainPage extends Component {
                         </ul>
                     </Typography>
                 </Grid>
-                <Grid item xs={6} className="map">
+                <Grid item xs={12} className="map">
                     <Typography variant="h3">Карта</Typography>
                     <div className="map__content">
-                        <a href="https://yandex.ru/maps/?um=constructor%3Aed4595d8fa240d1a5c77fff3aa1265450d17527b974738de3fadaa98f26e141a&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aed4595d8fa240d1a5c77fff3aa1265450d17527b974738de3fadaa98f26e141a&amp;width=600&amp;height=436&amp;lang=ru_RU" alt="" /></a>
+                        <a href="https://yandex.ru/maps/?um=constructor%3Aed4595d8fa240d1a5c77fff3aa1265450d17527b974738de3fadaa98f26e141a&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aed4595d8fa240d1a5c77fff3aa1265450d17527b974738de3fadaa98f26e141a&amp;width=600&amp;height=436&amp;lang=ru_RU" alt="" className="map_img" /></a>
                     </div>
                 </Grid>
             </Grid>
@@ -42,3 +53,5 @@ export default class MainPage extends Component {
         )
     }
 }
+
+export default withStyles(styles)(MainPage)

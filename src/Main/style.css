@@ -1,15 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic-ext";
 
-.container {
-    display: flex;
-
-    
-}
-
 .map{
     padding-left: 30px;
 }
 
 .map__content{
  padding-top: 20px;
+}
+
+.map_img{
+    height: auto;
+    width: 100%;
 }

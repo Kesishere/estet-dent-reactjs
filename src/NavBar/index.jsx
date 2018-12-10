@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { Paper, Tabs, Tab, Switch } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from "react-bootstrap"
-import { Link } from "react-router-dom"
 import "./style.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -16,7 +14,6 @@ const styles = {
 class NavBar extends Component {
 
     render() {
-        const { classes } = this.props;
         return (
             <div>
                 <Navbar>

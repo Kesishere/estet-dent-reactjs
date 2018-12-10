@@ -9,8 +9,8 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <Fragment className="logo">
-                    <img src={logo} alt="" />
+                <Fragment>
+                    <img src={logo} alt="" className="logo"/>
                 </Fragment>
                 <div className="header_right">
                     <Typography variant="h5" >

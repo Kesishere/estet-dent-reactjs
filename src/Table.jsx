@@ -25,7 +25,7 @@ class CustomTable extends Component {
                         </TableHead>
                         <TableBody>
                             {data.map((item) => (
-                                <TableRow>
+                                <TableRow key={item.name}>
                                     <TableCell>
                                         <Typography variant="h5">{item.name}</Typography>
                                     </TableCell>

@@ -4,13 +4,15 @@
     height: 80px;
     justify-content: space-between;
     padding-top: 20px;
-    padding-left: 50px;
+    padding-left: 20px;
     padding-right: 50px;
 }
 
 .logo {
-    height: auto;
+        width: 200px;
+        height: auto;
 }
+
 
 .header_right{
     padding-top: 10px;

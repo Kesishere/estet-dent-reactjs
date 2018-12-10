@@ -4,7 +4,7 @@ class Spec extends Component {
   render() {
     return (
       <div>
-        Spec
+        В разработке
       </div>
     )
   }

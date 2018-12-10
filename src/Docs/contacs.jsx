@@ -12,7 +12,7 @@ class ContactInfo extends Component {
                 <Card>
                     <CardHeader title="Реквезиты" />
                     <CardContent>
-                        <img src={req} alt="" />
+                        <img src={req} alt="" className="image" />
                     </CardContent>
                 </Card>
             </Grid>

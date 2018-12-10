@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header';
 import NavBar from './NavBar';
 import baner from "./img/main2.jpg"
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import {Route} from "react-router-dom";
 
 import Main from './Main';
 import Spec from "./Specs/1"
@@ -25,7 +25,7 @@ class App extends Component {
       <div>
         <Header />
         <NavBar />
-        <img src={baner} />
+        <img src={baner} alt="Nature" className="responsive"/>
         <div className="main__content">
           <Route path="/" exact component={Main} />
           <Route path="/specs" component={Spec} />
